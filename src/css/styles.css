@@ -1,0 +1,252 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+    min-height: 750px;
+}
+body {
+    height: calc(100% - 80px);
+    background-size: 100% 100%;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-image: url(../../public/img/Fondo_pokebolas.png);
+    background-color: #000;
+}
+/* Device */
+
+.device {
+    margin-bottom: 150px;
+    width: 356px;
+    height: 671px;
+    position: relative;
+    border-radius: 37px;
+    background-color: #000;
+    background: linear-gradient(104deg, transparent, transparent 37%, #0c0e0d 37%),
+    linear-gradient(to bottom, #707070, #666667 45%, #030303 55%, black);
+    box-shadow: inset 0 0 1px 1px #85878a;
+}
+
+.device:before,
+.device:after {
+    content: "";
+    position: absolute;
+}
+
+.device:before {
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    top: 1px;
+    border-radius: 36px;
+    border: 2px #000 solid;
+}
+
+.device:after {
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    top: 3px;
+    -webkit-border-radius: 34px;
+    border-radius: 34px;
+    border: 1px rgba(255, 255, 255, 0.2) solid;
+}
+
+.btn-volume {
+    position: absolute;
+    right: -4px;
+    width: 4px;
+    background-color: #3b3b3b;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    transparent 7px
+    );
+    border-radius: 0 3px 3px 0;
+    box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.2),
+    0 0 1px rgba(0, 0, 0, 0.5);
+    top: 116px;
+    height: 114px;
+}
+
+.btn-volume-up {
+    position: absolute;
+    height: 50%;
+    left: -1px;
+    right: -1px;
+    top: 0;
+    cursor: pointer;
+}
+
+.btn-volume-down {
+    position: absolute;
+    height: 50%;
+    left: -1px;
+    right: -1px;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.btn-power {
+    position: absolute;
+    right: -4px;
+    width: 4px;
+    background-color: #3b3b3b;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    transparent 7px
+    );
+    border-radius: 0 3px 3px 0;
+    box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.2),
+    0 0 1px rgba(0, 0, 0, 0.5);
+    top: 277px;
+    height: 62px;
+}
+
+.btn-power-act {
+    position: absolute;
+    height: 100%;
+    left: -1px;
+    right: -1px;
+    top: 0;
+    cursor: pointer;
+}
+
+.header {
+    height: 55px;
+    position: relative;
+    z-index: 2;
+}
+
+.speaker {
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    top: 3px;
+    width: 90px;
+    height: 11px;
+}
+
+.speaker:before,
+.speaker:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(
+    to bottom,
+    #575757 1px,
+    #555454 1px,
+    #767674 2px,
+    #494a49 2px,
+    #494a49 3px,
+    #121313 3px,
+    #121313 4px,
+    #4d4d52 5px,
+    #3c3b3f 7px,
+    #4d4d52
+    );
+    border-radius: 0 0 2px 2px;
+}
+
+.speaker:before {
+    left: 3px;
+    right: 35px;
+    transform: skew(30deg);
+    box-shadow: -1px 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.speaker:after {
+    left: 20px;
+    right: 3px;
+    transform: skew(-30deg);
+    background: linear-gradient(-110deg, rgba(0, 0, 0, 0.5) 40%, transparent 50%),
+    linear-gradient(
+        to bottom,
+        #575757 1px,
+        #555454 1px,
+        #767674 2px,
+        #494a49 2px,
+        #494a49 3px,
+        #121313 3px,
+        #121313 4px,
+        #4d4d52 5px,
+        #3c3b3f 7px,
+        #4d4d52
+    );
+}
+
+.detector {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    background: #1e1f20;
+    top: 13px;
+}
+
+.detector-1 {
+    right: 111px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.detector-2 {
+    right: 101px;
+    border-radius: 0 5px 5px 0;
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.camera {
+    position: absolute;
+    right: 61px;
+    top: 11px;
+    width: 13px;
+    height: 13px;
+    background: linear-gradient(to bottom, #3c4347, #222524);
+    border-radius: 13px;
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.05), 0 0 0 1px black;
+}
+
+.camera:after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    bottom: 30%;
+    left: 30%;
+    border-radius: 10px;
+    background: linear-gradient(
+        -45deg,
+        transparent,
+        rgba(0, 0, 0, 0.7) 30%,
+        transparent
+    ),
+    linear-gradient(45deg, #081729 20%, #4c8bb2 50%, #081729 90%);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.display {
+    width: 320px;
+    height: 573px;
+    background-size: auto 100%;
+    margin-left: 18px;
+    z-index: 2;
+    position: relative;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.7);
+    background-color: white;
+}
+
+h1 {
+    padding-top: 50px;
+}
+
+#myDiv .swal2-container {
+    position: absolute;
+    bottom: 80px;
+    height:500px;
+    width:500px;
+}

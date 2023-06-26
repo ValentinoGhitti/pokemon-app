@@ -1,24 +1,20 @@
-# pokemon-game
+# ¿Quién es es Pokemon? POKEMONGAME-APP
 
-## Project setup
-```
-npm install
-```
+Un juego de pokemon que consiste en adivinar eñ pokemon, es una app interactiva y divertida para pasar un rato. Está desarrollada en Vue 3. Al iniciar te muestra la silueta de un pokemon junto a cuatro opciones con nombres de distintos pokemon, en una de esas opciones estará el nombre del pokemon de la silueta.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Tecnologías utilizadas
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- **Vue 3**: Framework de JavaScript utilizado para construir la interfaz de usuario interactiva.
+- **HTML y CSS**: Lenguajes de marcado y estilos utilizados para diseñar y dar estilo a la interfaz de usuario.
+- **Pokémon API**: Se utilizó una API de Pokémon para obtener datos y siluetas de Pokémon en tiempo real.
+- **Axios**: Biblioteca de JavaScript utilizada para realizar peticiones HTTP a la API de Pokémon.
 
-### Run your unit tests
-```
-npm run test:unit
-```
+## Temas principales abordados
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- **Comunicación de Componentes**
+- **Axios**
+- **Mount**
+- **Emitir eventos**
+- **Escuchar eventos personalizados**
+- **Funciones para generar información aleatoria**
+- **Lógica para resolver la necesidad de la aplicación**
